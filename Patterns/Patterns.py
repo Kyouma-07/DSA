@@ -9,7 +9,6 @@ class Patterns:
     def __init__(self):
         pass
 
-
     def pattern1(self , n : int):
         for i in range(1,n+1):
             for j in range(1,i+1):
