@@ -110,11 +110,30 @@ class Bitwise:
 
 
     #Question -> Find the position of the rightmost set bit: 
-
-
     @staticmethod
     def getrightmostsetBit( n: int) ->int:
-        pass
+        if n == 0:
+            return 0
+        else:
+            return n & -n
+        
+    #Question -> Given an array of numbers , each number is appearning odd number of times except for 1 number that is appearing only 1 number of time, find the given number.
+
+    #using a hashmap:
+    def find_unique_number(arr  : list[int]) -> int:
+        freq = {}  # Step 1: Initialize hashmap
+        for num in arr:
+            freq[num] = freq.get(num, 0) + 1  # Count occurrences
+
+        for num, count in freq.items():  # Step 2: Find the number appearing once
+            if count == 1:
+                return num
+    #time complexity 0(n) , space complexity 0(n)
+
+    #using mathematical formula:
+    #return (3 * sum(set(arr)) - sum(arr)) // 2
+    #time complexity 0(n) , space complexity 0(n)
+    
 
 
 if __name__ == "__main__":
@@ -125,3 +144,4 @@ if __name__ == "__main__":
     print(bitwise.findithBit(10 , 3))
     print(bitwise.setithBit(10,1))
     print(bitwise.resetithBit(10,1))
+    print(bitwise.getrightmostsetBit(10))
