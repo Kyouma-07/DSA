@@ -8,13 +8,13 @@ class gcd:
             if b==0:
                 return a
             return gcd(b,a%b)
-        gcd = gcd(a,b)
-        lcm = (a*b)//gcd
-        return [lcm,gcd]
+        gcd = gcd(a,b) # type: ignore
+        lcm = (a*b)//gcd # type: ignore
+        return [lcm,gcd] # type: ignore
     
 if __name__ == "__main__":
     a = int(input("Enter the first number:"))
     b = int(input("Enter the second Number:"))
-    gcd = gcd()
-    res = gcd.lcmAndGcd(a,b)
+    gcd1 = gcd()
+    res = gcd1.lcmAndGcd(a,b)
     print(res)

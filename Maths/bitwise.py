@@ -120,7 +120,7 @@ class Bitwise:
     #Question -> Given an array of numbers , each number is appearning odd number of times except for 1 number that is appearing only 1 number of time, find the given number.
 
     #using a hashmap:
-    def find_unique_number(arr  : list[int]) -> int:
+    def find_unique_number(self, arr  : list[int]) ->int:
         freq = {}  # Step 1: Initialize hashmap
         for num in arr:
             freq[num] = freq.get(num, 0) + 1  # Count occurrences
@@ -128,13 +128,15 @@ class Bitwise:
         for num, count in freq.items():  # Step 2: Find the number appearing once
             if count == 1:
                 return num
+        
+        return -1
     #time complexity 0(n) , space complexity 0(n)
 
     #using mathematical formula:
     #return (3 * sum(set(arr)) - sum(arr)) // 2
     #time complexity 0(n) , space complexity 0(n)
     
-
+    
 
 if __name__ == "__main__":
     bitwise = Bitwise()
@@ -145,3 +147,4 @@ if __name__ == "__main__":
     print(bitwise.setithBit(10,1))
     print(bitwise.resetithBit(10,1))
     print(bitwise.getrightmostsetBit(10))
+

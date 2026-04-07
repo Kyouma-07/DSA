@@ -1,5 +1,5 @@
 #counting the number of digits in a number
-
+import math
 class MathConcepts:
 
     def __init__(self):
@@ -49,6 +49,6 @@ class MathConcepts:
 
 if __name__ == "__main__":
     n = int(input("Enter the number:"))
-    math = MathConcepts()
-    res = math.countDigits(n)
+    obj = MathConcepts()
+    res = obj.countDigits(n)
     print(res)
