@@ -15,43 +15,43 @@ class Patterns:
                 print("*",end=" ")
             print("\n")
 
-    def pattern2(Self , n : int):
+    def pattern2(self , n : int):
         for i in range(1,n+1):
             for j in range(1,n+1):
                 print("*",end=" ")
             print("\n")
 
-    def pattern3(Self , n : int):
+    def pattern3(self , n : int):
         for i in range(1,n+1):
             for j in range(1,i+1):
                 print(j,end=" ")
             print("\n")
 
-    def pattern4(Self , n:  int):
+    def pattern4(self , n:  int):
         for i in range(1,n+1):
             for j in range(1,i+1):
                 print(i,end=" ")
             print("\n")
 
-    def pattern5(Self , n:  int):
+    def pattern5(self , n:  int):
         for i in range(1,n+1):
             for j in range(i,n+1):
                 print("*",end=" ")
             print("\n")
 
-    def pattern6(Self , n:  int):
+    def pattern6(self , n:  int):
         for i in range(1,n+1):
             for j in range(1,n+2-i):
                 print(j,end=" ")
             print("\n")
 
-    def pattern7(Self, n:   int):
+    def pattern7(self, n:   int):
         for i in range(1,n+1):
             for j in range(1,n+2-i):
                 print(i,end=" ")
             print("\n")
 
-    def pattern8(Self, n:   int):
+    def pattern8(self, n:   int):
         for i in range(1,n+1):
             #space
             for j in range(1,n+2-i):
@@ -67,7 +67,7 @@ class Patterns:
 
             print("\n")
 
-    def pattern9(Self, n:   int):
+    def pattern9(self, n:   int):
         for i in range(1,n+1):
             #space
             for j in range(1,i):
@@ -83,7 +83,7 @@ class Patterns:
 
             print("\n")
 
-    def pattern10(Self, n:  int):
+    def pattern10(self, n:  int):
         for i in range(1,n+1):
             #space
             for j in range(1,n+2-i):
@@ -114,7 +114,7 @@ class Patterns:
 
             print("\n")
 
-    def pattern11(Self , n: int):
+    def pattern11(self , n: int):
         for i in range (1, n+1):
             for j in range(1,i+1):
                 print("*",end=" ")
@@ -125,7 +125,7 @@ class Patterns:
                 print("*",end=" ")
             print("\n")
 
-    def pattern12(Self , n: int):
+    def pattern12(self , n: int):
         start = 1
         for i in range (1, n+1):
             if(i%2==0):
@@ -137,7 +137,7 @@ class Patterns:
                 start = 1 - start
             print("\n")
 
-    def pattern13(Self , n: int):
+    def pattern13(self , n: int):
         space = 2*(n-1)
         for i in range(1,n+1):
 
@@ -156,7 +156,7 @@ class Patterns:
             print("\n")
             space -= 2
 
-    def pattern14(Self , n: int):
+    def pattern14(self , n: int):
         count = 1
         for i in range ( 1, n+1):
             for j in range(1,i+1):
@@ -164,43 +164,43 @@ class Patterns:
                 count += 1
             print("\n")
 
-    def pattern15(Self , n: int):
+    def pattern15(self , n: int):
         for i in range (n):
             for j in range(i+1):
                 print(chr(65+j),end=" ")
             print("\n")
 
-    def pattern16(Self , n: int):
+    def pattern16(self , n: int):
         for i in range (n):
             for j in range(i+1):
                 print(chr(65+i),end=" ")
             print("\n")
     
-    def pattern17(Self , n: int):
+    def pattern17(self , n: int):
         for i in range (n):
             for j in range(i+1):
                 print(chr(65+n-i-1),end=" ")
             print("\n")
 
-    def pattern18(Self , n: int):
+    def pattern18(self , n: int):
         for i in range (n):
             for j in range(i+1):
                 print(chr(65+n-j-1),end=" ")
             print("\n")
 
-    def pattern19(Self , n: int):
+    def pattern19(self , n: int):
         for i in range (n):
             for j in range(n-i):
                 print(chr(65+j),end=" ")
             print("\n")
         
-    def pattern20(Self , n: int):
+    def pattern20(self , n: int):
         for i in range (n):
             for j in range(n-i):
                 print(chr(65+i),end=" ")
             print("\n")
 
-    def pattern21(Self , n: int):
+    def pattern21(self , n: int):
         for i in range (n):
             #space
             for j in range(n-i-1):
@@ -221,13 +221,13 @@ class Patterns:
             
             print("\n")
 
-    def pattern22(Self , n: int):
+    def pattern22(self , n: int):
         for i in range (n):
             for j in range(i,-1,-1):
                 print(chr(65+n-j-1),end=" ")
             print("\n")
 
-    def pattern23(Self , n: int):
+    def pattern23(self , n: int):
 
         space = 0
         for i in range (n):
@@ -266,7 +266,7 @@ class Patterns:
 
             num = num-2
 
-    def pattern24(Self , n: int):
+    def pattern24(self , n: int):
         num = 8
         for i in range (n-1):
             #star
@@ -304,7 +304,7 @@ class Patterns:
 
             space += 1
         
-    def pattern25(Self , n: int):
+    def pattern25(self , n: int):
         for i in range(n):
             for j in range(n):
                 if (i ==0 or j==0 or i==n-1 or j==n-1):
@@ -313,7 +313,7 @@ class Patterns:
                     print(" ",end=" ")
             print("\n")
 
-    def pattern26(Self , n: int):
+    def pattern26(self , n: int):
         for i in range(2*n-1):
             for j in range(2*n-1):
                 top = i

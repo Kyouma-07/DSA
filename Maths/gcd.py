@@ -12,6 +12,16 @@ class gcd:
         lcm = (a*b)//gcd # type: ignore
         return [lcm,gcd] # type: ignore
     
+    # "using  iterative approach"
+    def lcmAndGcdIterative(self, a: int, b: int) -> list[int]:
+        def gcd_iterative(a, b):
+            while b:
+                a, b = b, a % b
+            return a
+        gcd = gcd_iterative(a, b)
+        lcm = (a * b) // gcd
+        return [lcm, gcd]
+
 if __name__ == "__main__":
     a = int(input("Enter the first number:"))
     b = int(input("Enter the second Number:"))
