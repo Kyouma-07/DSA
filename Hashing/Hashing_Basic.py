@@ -169,16 +169,3 @@ if __name__ == "__main__":
    print("Hello world")
    obj = Hashing_Basic()
    print(obj.counterSubarr([1,2,1,2,1],3))
-
-
-"""Find most frequent element
-Find first non-repeating element
-Count frequency of characters in a string
-
-
-🔥 Which method to pick in interviews instantly
-🧩 Problems where Counter fails
-⚔️ Real interview question walkthrough using hashing
-
-
-"""

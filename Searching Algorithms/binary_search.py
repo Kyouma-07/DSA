@@ -1,12 +1,12 @@
 class Binary:
     
-    def __init__(Self):
+    def __init__(self):
         pass
     
     #normal binary search
     #time complexity = O(logn)
     #space complexiyt = O(1)
-    def search(Self, array, target):
+    def search(self, array, target):
         
         low = 0
         high= len(array)-1

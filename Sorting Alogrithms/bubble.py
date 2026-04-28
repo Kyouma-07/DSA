@@ -1,6 +1,6 @@
 class Bubble:
     
-    def __init__ (Self):
+    def __init__ (self):
         pass
     
     def bubblesort(self, arr):
