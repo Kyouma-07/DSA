@@ -148,6 +148,26 @@ class Hashing_Basic:
          
        return max_length
     #dont break the inner iteration once the sum reaches above the target value cause the array may contain negative values.
+
+    #for only +ve elements in array
+    def subSumPositive(self, arr: list[int], target : int)-> int:
+        left = 0
+        max_len = 0
+        current_sum = 0
+
+        for i in range (len(arr)):
+           current_sum += arr[i]
+
+           while current_sum > target and left <= i :
+              current_sum -= arr[left]
+              left += 1
+
+           if current_sum == target:
+              max_len = max(max_len, i-left+1)
+        
+        return max_len
+              
+
     #Subarry sum equals K
     #Brute force:
     def counterSubarr(self, arr: list, target: int) -> int:
