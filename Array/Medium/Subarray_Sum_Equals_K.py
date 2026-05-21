@@ -25,6 +25,21 @@ class LC560:
         
         return counter
 
+    #Subarry sum equals K
+    #Brute force:
+    def counterSubarr(self, arr: list, target: int) -> int:
+        counter = 0
+        for i in range( len(arr)):
+           current_sum = 0
+
+           for j in range ( i , len(arr)):
+              current_sum += arr[j]
+
+              if current_sum == target:
+                 counter += 1
+         
+        return counter
+
 if __name__ == "__main__":
     print("Hello world!!")
     obj = LC560()
