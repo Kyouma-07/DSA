@@ -57,12 +57,3 @@ class Balance:
     def isempty(self):
         return self.top == -1
 
-
-""" Balanced parentheses
-
-Next Greater Element 🔥
-
-Monotonic stack
-
-Largest rectangle in histogram
-"""
