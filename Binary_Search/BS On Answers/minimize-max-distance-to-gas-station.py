@@ -37,7 +37,7 @@ class LC744:
 
         for i in range( 0 ,len(stations)-1):
             gap = stations[i+1] - stations[i]
-            station_needed = math.ceil(gap/distance) - 1
+            station_needed += math.ceil(gap/distance) - 1
 
         return station_needed <= k
 
