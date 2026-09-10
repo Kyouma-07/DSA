@@ -28,3 +28,9 @@ class Subsequences:
         self.backtrack(index + 1, current)
         #pop
         current.pop()
+
+if __name__ == "__main__":
+
+    obj1 = Subsequences()
+    res = obj1.subSequence([1,2,3])
+    print(res)
