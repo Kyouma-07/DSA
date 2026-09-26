@@ -61,7 +61,9 @@ def find_all_paths(maze):
         # Invalid cell
         if r < 0 or r >= n or c < 0 or c >= n:
             return
+        
 
+        #if already visited or blocked : return
         if maze[r][c] == 0 or visited[r][c]:
             return
 
